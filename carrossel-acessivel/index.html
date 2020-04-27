@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Acessível</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1 class="title">Carrossel Acessível</h1>
+
+    <div class="carrossel">
+        <h2 class="carrossel__title">Artigos</h2>
+
+        <ul class="artigos">
+            <li id="artigo-1" class="artigo" data-artigo="0">
+                <article>
+                    <figure>
+                        <img src="images/alexander-sinn-KgLtFCgfC28-unsplash.jpg" alt="" class="artigo__img">
+                    </figure>
+                    <h3 class="artigo__title">Título</h3>
+                    <p class="artigo__text">Texto</p>
+                </article>
+            </li>
+
+            <li id="artigo-1" class="artigo" data-artigo="1">
+                <article>
+                    <figure>
+                        <img src="images/roman-synkevych-vXInUOv1n84-unsplash.jpg" alt="" class="artigo__img">
+                    </figure>
+                    <h3 class="artigo__title">Título 2 </h3>
+                    <p class="artigo__text">Texto 2</p>
+                </article>
+            </li>
+
+            <li id="artigo-2" class="artigo" data-artigo="2">
+                <article>
+                    <figure>
+                        <img src="images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="" class="artigo__img">
+                    </figure>
+                    <h3 class="artigo__title">Título 3</h3>
+                    <p class="artigo__text">Texto 3</p>
+                </article>
+            </li>
+        </ul>
+
+        <!-- controle do carrossel -->
+        <nav>
+            <ol class="botoes">
+                <li class="botao">
+                    <a href="#artigo-1" data-botao="0" class="botao__link botao__ativo">artigo 1</a>
+                </li>
+
+                <li class="botao">
+                    <a href="#artigo-2" data-botao="1" class="botao__link">artigo 2</a>
+                </li>
+
+                <li class="botao">
+                    <a href="#artigo-3" data-botao="2" class="botao__link">artigo 3</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <script src="./js/carrossel.js"></script>
+</body>
+</html>
