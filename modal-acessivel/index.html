@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Acessível</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <button id="abreModal" class="button">abrir modal</button>
+
+    <div class="modal" role="alertdialog" aria-labelledby="newsletter">
+        <div class="newsletter">
+            <h2 class="newsletter__title">newsletter</h2>
+
+             <form class="newsletter__form">
+                 <label for="email" class="newsletter__label">Email</label>
+                <input type="email" class="newsletter__input">
+
+                <button class="button">assinar newsletter</button>
+            </form>
+
+            <div class="fechaModal" role="button"></div>
+        </div>
+    </div>
+    
+    <script src="js/modal.js"></script>
+</body>
+</html>
